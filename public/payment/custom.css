@@ -1,0 +1,10 @@
+.payment-option .form-group img {
+    max-width: 150px;
+}
+.payment-option .form-group label {
+    border: 2px solid transparent;
+}
+.payment-option .form-group input:checked ~ label {
+    border: 2px solid red;
+    box-shadow: 0 5px 10px blue;
+}
