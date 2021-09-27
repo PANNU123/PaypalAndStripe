@@ -20,6 +20,7 @@ class PaymentController extends Controller
             'currecncy'=>['required','exists:currencies,iso'],
             'payment_platform'=>['required','exists:payment_plat_forms,id'],
         ];
+        // dd($request->all());
         $request->validate($rules);
         $paymentPlatForm=$this->PaymentPlatFormResolvers->resolveService($request->payment_platform);
         session()->put('paymentplatformId',$request->payment_platform);

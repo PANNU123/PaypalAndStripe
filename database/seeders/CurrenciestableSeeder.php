@@ -17,7 +17,8 @@ class CurrenciestableSeeder extends Seeder
         $curency=[
             'USD',
             'AUD',
-            'EUR'
+            'EUR',
+            'JPY',
         ];
         foreach($curency as $money)
             Currency::create([
